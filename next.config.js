@@ -1,4 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        hostname: "cdn.discordapp.com",
+      },
+      {
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        hostname: "avatars.githubusercontent.com",
+      },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
